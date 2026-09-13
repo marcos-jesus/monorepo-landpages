@@ -8,20 +8,24 @@ import ModulesCarousel from "@/components/sections/ModulesCarousel";
 import AudienceFit from "@/components/sections/AudienceFit";
 import FinalOffer from "@/components/sections/FinalOffer";
 import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
-      <ProofStrip />
-      <PricingByVolume />
-      <LightSection />
-      <Storytelling />
-      <ModulesCarousel />
-      <AudienceFit />
-      <FinalOffer />
-      <FAQ />
+      <main>
+        <Hero />
+        <ProofStrip />
+        <PricingByVolume />
+        <LightSection />
+        <Storytelling />
+        <ModulesCarousel />
+        <AudienceFit />
+        <FinalOffer />
+        <FAQ />
+      </main>
+      <Footer />
     </>
   );
 }
