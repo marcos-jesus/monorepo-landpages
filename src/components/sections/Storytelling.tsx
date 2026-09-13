@@ -8,11 +8,11 @@ export default function Storytelling() {
       <div className="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-[auto_1fr] md:items-start">
         <Reveal>
           <Image
-            src={withBasePath("/images/pessoa.webp")}
+            src={withBasePath("/images/pessoa.jpg")}
             alt="Fundador do Wendel Peterson"
             width={120}
             height={120}
-            className="rounded-full border border-white/10"
+            className="aspect-square rounded-full border border-white/10 object-cover"
           />
         </Reveal>
         <Reveal delay={0.1}>
