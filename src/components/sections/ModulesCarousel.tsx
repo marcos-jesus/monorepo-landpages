@@ -39,8 +39,8 @@ export default function ModulesCarousel() {
                   src={withBasePath(m.img)}
                   alt={m.title}
                   width={260}
-                  height={180}
-                  className="w-full rounded-xl"
+                  height={462}
+                  className="aspect-[260/462] w-full rounded-xl object-cover"
                 />
                 <p className="mt-4 text-xs font-bold uppercase tracking-widest text-cyan">
                   Módulo {m.n}
