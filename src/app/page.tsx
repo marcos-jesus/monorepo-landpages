@@ -4,6 +4,7 @@ import ProofStrip from "@/components/sections/ProofStrip";
 import PricingByVolume from "@/components/sections/PricingByVolume";
 import LightSection from "@/components/sections/LightSection";
 import Storytelling from "@/components/sections/Storytelling";
+import ModulesCarousel from "@/components/sections/ModulesCarousel";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PricingByVolume />
       <LightSection />
       <Storytelling />
+      <ModulesCarousel />
     </>
   );
 }
