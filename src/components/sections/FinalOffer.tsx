@@ -35,7 +35,7 @@ export default function FinalOffer() {
         </Reveal>
         <Reveal delay={0.2}>
           <div className="mt-10">
-            <Button href="#">Quero entrar no Wendel Peterson</Button>
+            <Button href="#">Quero entrar no curso</Button>
           </div>
           <p className="mt-4 text-sm text-muted">
             Compra protegida · Garantia de 7 dias

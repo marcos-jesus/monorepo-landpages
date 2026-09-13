@@ -29,7 +29,7 @@ export default function Hero() {
             QR Code e NFC, do zero até a primeira rota de clientes.
           </p>
           <div className="mt-8">
-            <Button href="#oferta">Quero entrar no Wendel Peterson</Button>
+            <Button href="#oferta">Quero entrar no curso</Button>
           </div>
           <p className="mt-6 text-sm text-muted">
             Treinamento vitalício · Garantia de 7 dias · Primeira turma

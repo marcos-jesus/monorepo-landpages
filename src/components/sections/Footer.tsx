@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t border-white/5 bg-bg py-10">
       <div className="mx-auto max-w-6xl px-6 text-center">
         <p className="font-display text-lg text-white">
-          Estrada <span className="text-brand">NFC PRO</span>
+          Wendel Peterson <span className="text-brand">NFC PRO</span>
         </p>
         <p className="mt-2 text-sm text-muted">
           Da placa à primeira rota de vendas.
