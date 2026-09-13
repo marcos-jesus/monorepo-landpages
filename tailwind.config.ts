@@ -19,6 +19,10 @@ const config: Config = {
         negative: "#FF5B61",
         light: "#F4F7FB",
       },
+      fontFamily: {
+        display: ["var(--font-display)", "Arial Black", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
+      },
     },
   },
   plugins: [],
