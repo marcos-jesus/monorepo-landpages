@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Storytelling() {
   return (
@@ -7,7 +8,7 @@ export default function Storytelling() {
       <div className="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-[auto_1fr] md:items-start">
         <Reveal>
           <Image
-            src="/images/pessoa.webp"
+            src={withBasePath("/images/pessoa.webp")}
             alt="Fundador do Wendel Peterson"
             width={120}
             height={120}

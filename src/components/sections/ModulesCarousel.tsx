@@ -3,6 +3,7 @@
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Reveal from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/basePath";
 
 const modules = [
   { n: "01", title: "Preparando a operação", img: "/images/modulo-1.webp" },
@@ -35,7 +36,7 @@ export default function ModulesCarousel() {
                 className="min-w-[260px] flex-[0_0_260px] rounded-2xl border border-white/10 bg-navy3 p-4"
               >
                 <Image
-                  src={m.img}
+                  src={withBasePath(m.img)}
                   alt={m.title}
                   width={260}
                   height={180}

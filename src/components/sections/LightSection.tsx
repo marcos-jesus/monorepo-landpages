@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/basePath";
 
 export default function LightSection() {
   return (
@@ -7,7 +8,7 @@ export default function LightSection() {
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
         <Reveal>
           <Image
-            src="/images/produto.png"
+            src={withBasePath("/images/produto.png")}
             alt="Detalhe da placa de avaliação"
             width={640}
             height={480}

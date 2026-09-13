@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/ui/Reveal";
+import { withBasePath } from "@/lib/basePath";
 
 export default function Hero() {
   return (
@@ -37,7 +38,7 @@ export default function Hero() {
         <Reveal delay={0.15}>
           <div className="rounded-2xl border border-white/10 bg-navy2 p-6">
             <Image
-              src="/images/produto.png"
+              src={withBasePath("/images/produto.png")}
               alt="Placa de avaliação com QR Code e NFC"
               width={640}
               height={480}
