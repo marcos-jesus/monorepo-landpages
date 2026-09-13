@@ -6,10 +6,10 @@ import Reveal from "@/components/ui/Reveal";
 import { withBasePath } from "@/lib/basePath";
 
 const modules = [
-  { n: "01", title: "Preparando a operação", img: "/images/modulo-1.webp" },
+  { n: "01", title: "Preparando a operação", img: "/images/modulo-1.jpg" },
   { n: "02", title: "A placa perfeita", img: "/images/modulo-2.webp" },
-  { n: "03", title: "A rota das primeiras vendas", img: "/images/modulo-3.webp" },
-  { n: "04", title: "Do bairro à escala", img: "/images/modulo-4.webp" },
+  { n: "03", title: "A rota das primeiras vendas", img: "/images/modulo-3.jpg" },
+  { n: "04", title: "Do bairro à escala", img: "/images/modulo-4.jpg" },
   { n: "05", title: "Comunidade", img: "/images/modulo-5.webp" },
   { n: "06", title: "Central de ferramentas", img: "/images/modulo-6.webp" },
 ];
