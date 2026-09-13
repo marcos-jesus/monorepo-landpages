@@ -33,6 +33,7 @@ export default function Button({
         initial={{ x: 0 }}
         whileHover={{ x: 4 }}
         transition={{ duration: 0.2 }}
+        aria-hidden="true"
       >
         →
       </motion.span>
@@ -46,5 +47,9 @@ export default function Button({
       </a>
     );
   }
-  return <button onClick={onClick}>{content}</button>;
+  return (
+    <button type="button" onClick={onClick}>
+      {content}
+    </button>
+  );
 }

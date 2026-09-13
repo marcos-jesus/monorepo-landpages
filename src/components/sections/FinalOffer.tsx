@@ -19,15 +19,15 @@ export default function FinalOffer() {
             50% de desconto · primeira turma
           </p>
           <p className="text-lg text-muted line-through">R$ 197,90</p>
-          <p className="font-display text-5xl text-white">
+          <h2 className="font-display text-5xl text-white">
             3x R$ 32,60 <span className="text-positive text-2xl">ou R$ 97,90 à vista</span>
-          </p>
+          </h2>
         </Reveal>
         <Reveal delay={0.1}>
           <ul className="mt-10 grid gap-3 text-left md:grid-cols-2">
             {benefits.map((b) => (
               <li key={b} className="flex gap-2 text-white/90">
-                <span className="text-positive">✓</span>
+                <span className="text-positive" aria-hidden="true">✓</span>
                 {b}
               </li>
             ))}
@@ -35,7 +35,7 @@ export default function FinalOffer() {
         </Reveal>
         <Reveal delay={0.2}>
           <div className="mt-10">
-            <Button href="#">Quero entrar no Estrada NFC PRO</Button>
+            <Button href="#">Quero entrar no Wendel Peterson</Button>
           </div>
           <p className="mt-4 text-sm text-muted">
             Compra protegida · Garantia de 7 dias

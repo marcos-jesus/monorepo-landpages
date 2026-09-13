@@ -55,7 +55,7 @@ export default function FAQ() {
                   <span className="font-display text-lg text-white">
                     {item.q}
                   </span>
-                  <span className="text-2xl text-cyan">
+                  <span className="text-2xl text-cyan" aria-hidden="true">
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>

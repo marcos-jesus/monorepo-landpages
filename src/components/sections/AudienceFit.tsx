@@ -16,22 +16,22 @@ export default function AudienceFit() {
   return (
     <section className="grid md:grid-cols-2">
       <Reveal className="bg-brand p-12 md:p-16">
-        <h3 className="font-display text-2xl text-white">Para você se:</h3>
+        <h2 className="font-display text-2xl text-white">Para você se:</h2>
         <ul className="mt-6 space-y-4">
           {fit.map((item) => (
-            <li key={item} className="flex gap-3 text-white/90">
-              <span className="text-positive">✓</span>
+            <li key={item} className="flex gap-3 text-white">
+              <span className="text-positive" aria-hidden="true">✓</span>
               {item}
             </li>
           ))}
         </ul>
       </Reveal>
       <Reveal delay={0.1} className="bg-bg p-12 md:p-16">
-        <h3 className="font-display text-2xl text-white">Não é para você se:</h3>
+        <h2 className="font-display text-2xl text-white">Não é para você se:</h2>
         <ul className="mt-6 space-y-4">
           {notFit.map((item) => (
             <li key={item} className="flex gap-3 text-white/90">
-              <span className="text-negative">×</span>
+              <span className="text-negative" aria-hidden="true">×</span>
               {item}
             </li>
           ))}

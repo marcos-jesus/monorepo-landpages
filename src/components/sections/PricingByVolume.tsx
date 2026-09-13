@@ -28,13 +28,23 @@ export default function PricingByVolume() {
                     : "border-white/10 bg-navy2"
                 }`}
               >
-                <p className="text-sm uppercase tracking-wide text-white/80">
+                <p
+                  className={`text-sm uppercase tracking-wide ${
+                    tier.highlight ? "text-white" : "text-white/80"
+                  }`}
+                >
                   {tier.qty}
                 </p>
                 <p className="mt-4 font-display text-3xl text-white">
                   {tier.price}
                 </p>
-                <p className="mt-1 text-xs text-white/60">por placa</p>
+                <p
+                  className={`mt-1 text-xs ${
+                    tier.highlight ? "text-white" : "text-white/60"
+                  }`}
+                >
+                  por placa
+                </p>
               </div>
             </Reveal>
           ))}

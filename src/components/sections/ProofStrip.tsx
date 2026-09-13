@@ -27,12 +27,12 @@ export default function ProofStrip() {
                 />
                 {stat.suffix}
               </p>
-              <p className="mt-2 text-sm text-white/80">{stat.label}</p>
+              <p className="mt-2 text-sm text-white">{stat.label}</p>
             </div>
           </Reveal>
         ))}
       </div>
-      <p className="mt-10 text-center text-xs text-white/60">
+      <p className="mt-10 text-center text-xs text-white">
         Resultados individuais, não representam garantia de desempenho.
       </p>
     </section>

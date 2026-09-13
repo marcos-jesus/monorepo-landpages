@@ -12,15 +12,20 @@ export default function SmoothScrollProvider({
     const lenis = new Lenis({
       duration: 1.1,
       easing: (t) => 1 - Math.pow(1 - t, 3),
+      anchors: true,
     });
 
+    let id: number;
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      id = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    id = requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return () => {
+      cancelAnimationFrame(id);
+      lenis.destroy();
+    };
   }, []);
 
   return <>{children}</>;

@@ -8,13 +8,14 @@ export default function Storytelling() {
         <Reveal>
           <Image
             src="/images/pessoa.webp"
-            alt="Fundador do Estrada NFC PRO"
+            alt="Fundador do Wendel Peterson"
             width={120}
             height={120}
             className="rounded-full border border-white/10"
           />
         </Reveal>
         <Reveal delay={0.1}>
+          <h2 className="sr-only">Nossa história</h2>
           <p className="mb-2 text-sm font-bold uppercase tracking-widest text-cyan">
             Primeiro a rua. Depois o curso.
           </p>

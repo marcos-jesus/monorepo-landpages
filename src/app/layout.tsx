@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Manrope } from "next/font/google";
+import { MotionConfig } from "framer-motion";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
@@ -16,7 +17,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Estrada NFC PRO — Da placa à primeira rota de vendas",
+  title: "Wendel Peterson — Da placa à primeira rota de vendas",
   description:
     "Treinamento prático para aprender a preparar, configurar e vender placas de avaliação com QR Code e NFC.",
 };
@@ -29,7 +30,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${archivoBlack.variable} ${manrope.variable}`}>
       <body className="bg-bg text-white font-body antialiased">
-        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        <noscript>
+          <style>{`[style*="opacity:0"] { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
+        <MotionConfig reducedMotion="user">
+          <SmoothScrollProvider>{children}</SmoothScrollProvider>
+        </MotionConfig>
       </body>
     </html>
   );
