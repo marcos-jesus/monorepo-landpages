@@ -6,6 +6,7 @@ import LightSection from "@/components/sections/LightSection";
 import Storytelling from "@/components/sections/Storytelling";
 import ModulesCarousel from "@/components/sections/ModulesCarousel";
 import AudienceFit from "@/components/sections/AudienceFit";
+import FinalOffer from "@/components/sections/FinalOffer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Storytelling />
       <ModulesCarousel />
       <AudienceFit />
+      <FinalOffer />
     </>
   );
 }
