@@ -7,6 +7,7 @@ import Storytelling from "@/components/sections/Storytelling";
 import ModulesCarousel from "@/components/sections/ModulesCarousel";
 import AudienceFit from "@/components/sections/AudienceFit";
 import FinalOffer from "@/components/sections/FinalOffer";
+import FAQ from "@/components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ModulesCarousel />
       <AudienceFit />
       <FinalOffer />
+      <FAQ />
     </>
   );
 }
